@@ -26,12 +26,12 @@ function viewCart() {
   if (cart.length < 1) {
     desc = "Your shopping cart is empty.";
   } else if (cart.length == 1){
-    item1 = Object.keys(cart[0]);
+    item1 = Object.keys(cart[0])[0];
     desc += `${item1} at $${cart[0][item1]}.`
   } else if (cart.length == 2){
     item1 = Object.keys(cart[0]);
     item2 = Object.keys(cart[1]);
-    desc += `${item1} at $${cart[0][item1]}, and ${item2} at $${cart[1][item2]}.`
+    desc += `${item1} at $${cart[0][item1]} and ${item2} at $${cart[1][item2]}.`
   } else { // 3 or more items
         for (var i = 0; i < cart.length -1; i++){
           item1 = Object.keys(cart[i]);
