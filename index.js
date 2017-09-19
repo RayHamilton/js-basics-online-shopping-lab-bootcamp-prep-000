@@ -19,7 +19,7 @@ return cart
 
 function viewCart() {
   // write your code here
-  console.log("cart length",cart.length)
+  // console.log("cart length",cart.length)
   var item1,item2 = "";
   var last = 0;
   var desc = `In your shopping cart, you have `
